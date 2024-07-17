@@ -1,0 +1,15 @@
+.news {
+  background-color: rgb(73, 0, 0);  
+}
+
+
+.news_body {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+.news_img {
+    width: 350px;
+    height: 400px;   
+}
+    
