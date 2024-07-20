@@ -1,4 +1,38 @@
-body {
-    color: red;
-    
+@font-face {
+    font-family: Pt Sans;
+    src: url('/fonts/PTSans-Regular.ttf');
+    font-weight: 400; 
 }
+@font-face {
+    font-family: Pt Sans;
+    src: url('/fonts/PTSans-Bold.ttf');
+    font-weight: 700; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans';
+}
+
+.main {
+  max-width: 450px;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.motto img {
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+    display: block;
+}
+.motto h1 {
+    line-height: 47px;
+    font-size: 36px;
+    font-weight: 700px;
+   }
+
