@@ -19,16 +19,18 @@ body {
     box-sizing: border-box;
     font-family: 'PT Sans';
     background-color: #f9f9f9;
+    
 }
 
 .main {
   max-width: 450px;
-  padding: 60px 03px;
+  padding: 60px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
   box-sizing: border-box;
+  margin: 0 auto;
 }
 .motto img {
     width: 100px;
@@ -39,7 +41,7 @@ body {
 .motto h1 {
     line-height: 47px;
     font-size: 36px;
-    font-weight: 700px;
+    font-weight: 700;
     padding:  0 80px;
     margin-bottom: 10px;
    }
@@ -136,4 +138,131 @@ body {
     background-color: #EB5A1E;
     border-radius: 5px 0 0 5px;
 }
+.additem {
+    font-size: 20px;
+    line-height: 20px;
+    color: #EB5A1E;
+    background-color: #FFFFFF;
+    border: 3px solid #EB5A1E;
+    border-radius: 5px;
+    padding: 12px 15px 12px 15px;
+    margin-top: 20px;
+}
+
+.busket {
+    background-color: white;
+    width: 100%;
+    padding: 0 20px 30px;
+    text-align: left;
+    display: block;
+}
+.busketblock1 {
+        font-size: 20px;
+        margin-right: 50px;
+        font-weight: bold;
+}
+
+.busketblock2 {
+    font-size: 16px;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 8px 20px 8px 20px;
+}
+
+.busketblock3 {
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction:row;
+}
+
+.busketblock3 .del {
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+
+.busketblock4 {
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.busketblock4 .del {
+    font-size: 20px;
+    font-weight:bold;
+    margin-right: 7px;
+}
+
+.color {
+    color: #EB5A1E;
+    font-weight: bold;
+}
+
+.kefteme {
+    width: 60px;
+    height: 60px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.god {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 5px;
+}   
+
+.god p {
+    margin: 0 0 10px;
+}
+
+.busketblock7 {
+    font-size: 18px;
+}
+
+.busketblock8 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+    font-weight:bold
+}
+
+.number input {
+    padding: 10px 20px;
+    border-radius: 5px; 
+    border: 1px solid #D7D7D7    ;
+    background-color: #EEEEEE;    
+}
+
+.number input::placeholder {
+    color: #000;
+}
+
+.busketblock10 {
+    
+    background-color: #2FC035;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
 
