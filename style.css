@@ -259,6 +259,20 @@ body {
     margin-top: 20px;
 }
 
+@media (min-width: 756px) {
+    .main {
+        max-width:  1200px;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        max-width: 350px;
+    }
+}
+
 
 
 
