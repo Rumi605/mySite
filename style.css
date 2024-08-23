@@ -156,13 +156,13 @@ body {
     text-align: left;
     display: block;
 }
-.busketblock1 {
+.offer {
         font-size: 20px;
         margin-right: 50px;
         font-weight: bold;
 }
 
-.busketblock2 {
+.del {
     font-size: 16px;
     background-color: #EEEEEE;
     color: #333333;
@@ -195,7 +195,7 @@ body {
     margin-right: 7px;
 }
 
-.color {
+.total {
     color: #EB5A1E;
     font-weight: bold;
 }
@@ -259,6 +259,13 @@ body {
     margin-top: 20px;
 }
 
+.phone-number {
+    font-family: "Pt Sans";
+    font-weight: bold;
+    font-size:large;
+    height: 40px;
+}
+
 @media (min-width: 756px) {
     .main {
         max-width:  1200px;
@@ -272,6 +279,10 @@ body {
         max-width: 350px;
     }
 }
+
+.best {
+    font-weight: 100;
+ }
 
 
 
