@@ -4,18 +4,16 @@ $productId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
 $products = Product::getAllproducts();
 
-$product = $products[$productId];
+$product = $products[$productId - 1];
 
 ?>
 
-
-<!DOCTYPE html
+<!DOCTYPE html>
 <html>
     <head>
      <title>Main Page</title>
-     <meta name="viewport" content="width=devise-width, inital scale=1">
      <link rel="stylesheet" href="../style.css">
-     <link rel="stylesheet" href="/product.css">
+     <link rel="stylesheet" href="../product.css">
      
     </head>
     <body>
@@ -24,13 +22,13 @@ $product = $products[$productId];
             <span><?=$product->name?></span> 
         </header>
         <main>
-            <div>
+            <div class="photos">
                 <img src="<?=$product->image[0]?>" width="200" height="200">
-                <img src="<?=$product->image[1]?>" alt="Картинка товара" width="200" height="200">
+                <img src="<?=$product->image[1]?>" width="200" height="200">
                 </div>
             <div>
-                <h2><?=$product->name?></h2>
-                <p>Описание:
+                <h2 class="name"><?=$product->name?></h2>
+                <p class="text11">Описание:
                 <?=$product->description?>
                  </p>   
             </div>

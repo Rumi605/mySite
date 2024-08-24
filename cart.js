@@ -2,32 +2,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const cart = [];
 
     document.querySelectorAll('.card').forEach(card => {
-        const decreaseButton = card.querySelector('.decrease')
-        const increaseButton = card.querySelector('.increase')
-        const quantitySpan = card.querySelector('.quantity')
-        const basketButton = card.querySelector('.additem')
+        const decreaseButton = card.querySelector('.decrease');
+        const increaseButton = card.querySelector('.increase');
+        const quantitySpan = card.querySelector('.quantity');
+        const basketButton = card.querySelector('.additem');
 
         let quantity = 1;
-        
-        decreaseButton.addEventListener('click', () =>{
-            if (quantity > 1 ) {
-                quantity--
-                quantitySpan.textContent = quantity
+
+        decreaseButton.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                quantitySpan.textContent = quantity;
             }
-        })
+        });
 
         increaseButton.addEventListener('click', () => {
-            quantity++
-            quantitySpan.textContent = quantity
-        })
-        
+            quantity++;
+            quantitySpan.textContent = quantity;
+        });
+
         basketButton.addEventListener('click', () => {
             const id = card.dataset.id;
             const name = card.querySelector('.product-name').textContent;
             const price = parseInt(card.querySelector('.row span:last-child').textContent);
 
             addToCart({ id, name, price, quantity });
-            quantitySpan.textContent = quantity
+            quantity = 1; // Сброс количества после добавления в корзину
+            quantitySpan.textContent = quantity;
         });
     });
 
@@ -50,16 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalPrice = 0;
         cart.forEach(item => {
             const itemDiv = document.createElement('div');
-            itemDiv.style.fontFamily = 'Pt Sans'
-                itemDiv.innerHTML = `   
+            itemDiv.style.fontFamily = 'Pt Sans';
+            itemDiv.innerHTML = `   
                 <p>${item.name} x${item.quantity}</p>
-                <p>${item.price * item.quantity}тг</p>
+                <p>${item.price * item.quantity.toLocaleString()} тг</p>
             `;
             cartItems.appendChild(itemDiv);
             totalPrice += item.price * item.quantity;
         });
 
-        total.textContent = `${totalPrice}тг`;
+        total.textContent = `${totalPrice.toLocaleString()} тг`;
         cartInput.value = JSON.stringify(cart);
 
         if (cart.length === 0) {
