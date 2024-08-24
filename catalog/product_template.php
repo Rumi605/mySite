@@ -27,7 +27,7 @@ $product = $products[$productId - 1];
                 <img src="<?=$product->image[1]?>" width="200" height="200">
                 </div>
             <div>
-                <h2 class="name"><?=$product->name?></h2>
+                <h2 class="name"><?=$product->name?> - <?= $product->price ?> тг</h2>
                 <p class="text11">Описание:
                 <?=$product->description?>
                  </p>   
