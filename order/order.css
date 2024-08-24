@@ -1,0 +1,21 @@
+.order-container {
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    padding-top: 250px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 250px;
+    height: 245px;
+    padding-top: 60px;
+}

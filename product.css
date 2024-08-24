@@ -1,0 +1,44 @@
+.a {
+    width: 50px;
+    height: 65px;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'PT Sans';
+    background-color: #000000;
+
+
+}
+
+.text11 {
+    font-family: "Pt Sans";
+    color:white;
+    padding: 5px;
+    line-height: 25px;
+    width: 90%;
+}
+
+
+header a {
+    font-size: large;
+    color: white;
+    font-size: 25px;
+}
+
+header span {
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.photos {
+    padding-top: 20px;
+}
+
+.name {
+    color: white;
+}
